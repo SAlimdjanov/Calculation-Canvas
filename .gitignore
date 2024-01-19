@@ -1,0 +1,25 @@
+# Build and temporary files
+build/
+*.cmake
+CMakeFiles/
+Makefile
+CMakeCache.txt
+CMakeLists.txt.user
+CMakeScripts
+cmake_install.cmake
+compile_commands.json
+Testing
+CTestTestfile.cmake
+_deps
+install_manifest.txt
+
+# Binaries
+*.out
+*.app
+*.exe
+
+# Visual Studio Code
+.vscode/
+
+# Misc.
+.DS_Store
