@@ -10,11 +10,18 @@
  */
 
 #include "calculation_canvas.h"
-#include <gtkmm/application.h>
 
-int main(int argc, char *argv[])
+class CalculationCanvas : public wxApp
 {
-    auto app = Gtk::Application::create(argc, argv, "app.CalculationCanvas");
-    CalculationCanvas calculationCanvas;
-    return app->run(calculationCanvas);
+public:
+    bool OnInit() override;
+};
+
+wxIMPLEMENT_APP(CalculationCanvas);
+
+bool CalculationCanvas::OnInit()
+{
+    MainFrame *mainFrame = new MainFrame();
+    mainFrame->Show(true);
+    return true;
 }
